@@ -15,3 +15,9 @@
 4. Edit server.js routes with the use of workoutsRoutes const.
 5. Create all the handlers (get,post,delete,update) inside the workouts.js
 6. Edit server.js file adding a middleware express.json() which attach the body (data) of a request if it exist to the request object of the handler.
+
+### Lesson 4
+1. Edit th .env file to configure the mongo database URI.
+2. Install the mongoose package. Mongoose is a ODM library. It wraps mongodb with a extra layer tha allows to use methods to read and write database documents, allows to declare modules and schemas. It adds a extra layer of structure the mongodb by itself doesn't provide.
+3. I gonna use mongoose to connect to the database inside the server.js file.
+4. Import mongoose to use that object to create the connection to the database.

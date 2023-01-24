@@ -33,3 +33,9 @@
 3. I cutted the call of the workoutModel.js from routes>workout.js and pasted it to workoutController.js because here is where it's gonna be nedded now.
 4. Edit the workoutController.js to create the GET,POST,DELETE,UPDATE handlers of /api/workouts entry point.
 5. In the GET a single workout function I have to check if the id is a valid mongoose type objectId so I have to import mongoose en the file to create that validation inside the function.
+
+### Lesson 7 - Controllers (part 2).
+1. Edit the workoutController.js to create the GET,POST,DELETE,UPDATE handlers of /api/workouts entry point.
+5. In the DELETE a single workout function I have to check if the id is a valid mongoose type objectId so I have to import mongoose en the file to create that validation inside the function.
+6. Mongoose identify id as _id so in the deleteWorkout function I have to assign the value of id to _id.
+7. In the PATCH / updateWorkout function I used the spread operator to use whatever is in the req.body to update.

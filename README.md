@@ -26,3 +26,10 @@
 1. Inside the backend folder create the model folder and inside it create the workoutModel.js file which will contain the Schema & Model. This schema and model fucntion will be provided by mongoose because mongo by it self is schemeless.
 2. The schema define the structure a particular document in the database, and the model apply that schema to a particular module and We use that model to interact with a collection of that name.
 3. Edit routes>workout.js import the workoutModel.js from models>workoutModel.js and edit the POST controller to extract the variables attached to the req.body object and use the model to interact with.
+
+### Lesson 6 - Controllers (part 1).
+1. Create a folder inside backend named controller and inside it a file named workoutController.js.
+2. Inside workoutController.js I gonna created a bunch of functions that are going to be use or called in the router>workouts.js
+3. I cutted the call of the workoutModel.js from routes>workout.js and pasted it to workoutController.js because here is where it's gonna be nedded now.
+4. Edit the workoutController.js to create the GET,POST,DELETE,UPDATE handlers of /api/workouts entry point.
+5. In the GET a single workout function I have to check if the id is a valid mongoose type objectId so I have to import mongoose en the file to create that validation inside the function.

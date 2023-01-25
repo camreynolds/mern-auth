@@ -39,3 +39,25 @@
 5. In the DELETE a single workout function I have to check if the id is a valid mongoose type objectId so I have to import mongoose en the file to create that validation inside the function.
 6. Mongoose identify id as _id so in the deleteWorkout function I have to assign the value of id to _id.
 7. In the PATCH / updateWorkout function I used the spread operator to use whatever is in the req.body to update.
+
+### Lesson 8 - Creating a React app.
+1. Move outside the backend folder and type in the console **npx create-react-app frontend**, this will create a react app inside a folder named frontend.
+2. Inside frontend > src folder I gonna get rid of App.css, App.test.js, logo.svg, reportWebVitals.js, setupTests.js.
+3. Inside frontedd > src > index.js file erase the **import reportWebVitals from './reportWebVitals';** and **reportWebVitals();** lines and comments too.
+4. Inside frontedd > src > App.js file erase the **import logo from './logo.svg';** and **import './App.css';**.
+5. Leave the App.js function like this:
+
+    function App() {
+      return (
+        <div className="App">
+          
+        </div>  
+      );
+    }
+
+    export default App;
+
+6. Install the react-router-dom package so I'll can add different pages to this application later, to do that type in console: npm install react-router-dom
+7. Import this components from react-route-dom. BrowserRouter, Routes and Route. Browserrouter wraps everywhere I want to use the route, Routes that wraps all the individual Route, and Route that create a single route.
+8. Create a folder named **pages** and inside it create a Home.js file which is going to contain a react component which will be imported to App.js and use it in the element prop of the router with this path="/".
+9. Create a folder named **component** and inside it create a Navbar.js file which is going to contain a react component which will be imported to App.js and use above the Routes component. In this file I'll imported the **Link** component to use as anchor tag.

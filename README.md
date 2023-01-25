@@ -47,17 +47,29 @@
 4. Inside frontedd > src > App.js file erase the **import logo from './logo.svg';** and **import './App.css';**.
 5. Leave the App.js function like this:
 
+```js:
     function App() {
       return (
-        <div className="App">
-          
-        </div>  
+        <div  className="App">
+        </div>
       );
     }
-
     export default App;
+```
 
 6. Install the react-router-dom package so I'll can add different pages to this application later, to do that type in console: npm install react-router-dom
 7. Import this components from react-route-dom. BrowserRouter, Routes and Route. Browserrouter wraps everywhere I want to use the route, Routes that wraps all the individual Route, and Route that create a single route.
 8. Create a folder named **pages** and inside it create a Home.js file which is going to contain a react component which will be imported to App.js and use it in the element prop of the router with this path="/".
 9. Create a folder named **component** and inside it create a Navbar.js file which is going to contain a react component which will be imported to App.js and use above the Routes component. In this file I'll imported the **Link** component to use as anchor tag.
+
+### Lesson 9 - Fetching data from the API.
+1. Import useEffect() and  useState() hook inside the Home.js file. The useEffect() hook fires a function when the component is render, if I need to only render once I've to pass a second argument that is a empty array.
+2. Create a fetch function inside useEffect() hook.
+3. Map the response from the backend and show everysingle object of the array in the component.
+4. Add this code line inside the package.json file to avoid the CORS error.
+```js:
+    "proxy": "http://localhost:400",
+```
+This indicates that every petition that react doesn't recognize will be proxy to that direction, buy in this case that directión is my backend development server.
+5. I created a new file in the components folder named WorkoutDetails.js which will be a template for every single workout that is mapped.
+6. The index.css file was updated.

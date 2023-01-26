@@ -44,16 +44,14 @@
 7. In the PATCH / updateWorkout function I used the spread operator to use whatever is in the req.body to update.
 
 ### Lesson 8 - Creating a React app.
-1. Move outside the backend folder and type in the console 
+1. Move outside the backend folder and type in the console (this will create a react app inside a folder named frontend.)
 ```js:
   npx create-react-app frontend
 ```
-this will create a react app inside a folder named frontend.
 2. Inside frontend > src folder I gonna get rid of App.css, App.test.js, logo.svg, reportWebVitals.js, setupTests.js.
 3. Inside frontedd > src > index.js file erase the **import reportWebVitals from './reportWebVitals';** and **reportWebVitals();** lines and comments too.
 4. Inside frontedd > src > App.js file erase the **import logo from './logo.svg';** and **import './App.css';**.
 5. Leave the App.js function like this:
-
 ```js:
     function App() {
       return (
@@ -63,7 +61,6 @@ this will create a react app inside a folder named frontend.
     }
     export default App;
 ```
-
 6. Install the react-router-dom package so I'll can add different pages to this application later, to do that type in console: 
 ```js:
     npm install react-router-dom
@@ -76,11 +73,10 @@ this will create a react app inside a folder named frontend.
 1. Import useEffect() and  useState() hook inside the Home.js file. The useEffect() hook fires a function when the component is render, if I need to only render once I've to pass a second argument that is a empty array.
 2. Create a fetch function inside useEffect() hook.
 3. Map the response from the backend and show every single object of the array in the component.
-4. Add this code line inside the package.json file to avoid the CORS error.
+4. Add this code line inside the package.json file to avoid the CORS error. (This indicates that every petition that react doesn't recognize will be proxy to that direction, but in this case that directión is my backend development server.)
 ```js:
     "proxy": "http://localhost:400",
 ```
-This indicates that every petition that react doesn't recognize will be proxy to that direction, but in this case that directión is my backend development server.
 5. I created a new file in the components folder named WorkoutDetails.js which will be a template for every single workout that is mapped.
 6. The index.css file was updated.
 
@@ -88,3 +84,13 @@ This indicates that every petition that react doesn't recognize will be proxy to
 1. The file WorkoutForm.js was created insde the components folder. This will be use to add new workouts to the database.
 2. Import the **WorkoutForm.js** component to the **Home.js** page.
 3. Update the **index.css** file.
+
+### Lesson 11 - Adding React Context.
+1. Create **context** folder inside the frontend > src folder. 
+2. Add a new file to **context** folder and named it **WorkoutContext.js**
+3. Import **WorkoutContextProvider** to the **index.js** and wraps it. So every component in the app has access to this context.
+4. Create a custom **hooks** folder inside **src**.
+5. Add **useWorkoutsContext.js** file to **hooks** folder. This will be use to define where I wanna use the workout context.
+6. Import the **useWorkoutsContext.js** tho the **Home.js**.
+7. Edit the **Home.js** file, so I don't goona need the useState hook to update the state instead of that I gonna use the dispatch function.
+8. Edit the **WorkoutForm.js** and import the **useWorkoutsContext.js** to update the UI and keep sync with the database.

@@ -94,3 +94,10 @@
 6. Import the **useWorkoutsContext.js** tho the **Home.js**.
 7. Edit the **Home.js** file, so I don't goona need the useState hook to update the state instead of that I gonna use the dispatch function.
 8. Edit the **WorkoutForm.js** and import the **useWorkoutsContext.js** to update the UI and keep sync with the database.
+
+### Lesson 12 - Deleting data.
+1. Create a **delete button** inside **WorkoutDetails.js**
+2. Create a span with a handleClick() function that manages the logic necessary to make the request to the database, and keep sync the UI with the database too.
+```js:
+  <span onClick={handleClick}>delete</span>
+```

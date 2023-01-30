@@ -101,3 +101,10 @@
 ```js:
   <span onClick={handleClick}>delete</span>
 ```
+
+### Lesson 13 - Handling Error Responses.
+1. Create a better error message and highlight input fields to indicate where the error is.
+2. Edit the **createWorkout** controller in the backend to handle the errors in a better way.
+3. Edit the **WorkoutForm.js** in the frontend to handle the error in the UI.
+4. Use the **emptyFields** in the **WorkoutForm.js** to style the inputs.
+5. Edit the frontend **index.css** to highlight the inputs if there is an error.

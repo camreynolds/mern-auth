@@ -108,3 +108,10 @@
 3. Edit the **WorkoutForm.js** in the frontend to handle the error in the UI.
 4. Use the **emptyFields** in the **WorkoutForm.js** to style the inputs.
 5. Edit the frontend **index.css** to highlight the inputs if there is an error.
+
+### Lesson 14 - Finishing touches.
+1. Make a trash icon instead of the word "delete" in the **WorkoutDetails.js**. For that I gonna use material icon from google library.
+2. Edit the frontend > public > index.html file to insert a link to google material icon.
+3. Install the package **date-fns** which is a package to format the date in a more good looking way.
+4. Import **date-fns** to **WorkoutDetails.js**.
+5. 

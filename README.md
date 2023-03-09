@@ -130,9 +130,11 @@
 ### Lesson-users 3 - Signing Up & Hashing Password.
 1. Create a static method inside the **userModel.js** this static will be called "signup" and his structure is as it follows:
 ```js:
-  userSchema.statics.signup = fucntion(){
-
-  }
+  userSchema.statics.signup = fucntion(){}
 ```
 2. Install **bcrypt** to use it to hash the password in the signup static function.
 3. Import the **userModel.js** to the **userController.js** file to use the signup static funtion.
+
+### Lesson-users 4 - Email & Password validation.
+1. Install a package called **validator** to validated the email, and password.
+2. Require **validator** package inside the **userSchema.js** file and edit the signup static method to use **validator**.

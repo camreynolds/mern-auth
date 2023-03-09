@@ -1,6 +1,6 @@
 # Full MERN stack app
 
-## Backend:
+## Workouts Backend:
 
 ### Lesson 2 - Express App Setup.
 1. Create the backend folder.
@@ -42,6 +42,8 @@
 5. In the DELETE a single workout function I have to check if the id is a valid mongoose type objectId so I have to import mongoose in the file to create that validation inside the function.
 6. Mongoose identify id as _id so in the deleteWorkout function I have to assign the value of id to _id.
 7. In the PATCH / updateWorkout function I used the spread operator to use whatever is in the req.body to update.
+
+## Workouts Frontend:
 
 ### Lesson 8 - Creating a React app.
 1. Move outside the backend folder and type in the console (this will create a react app inside a folder named frontend.)
@@ -114,4 +116,13 @@
 2. Edit the frontend > public > index.html file to insert a link to google material icon.
 3. Install the package **date-fns** which is a package to format the date in a more good looking way.
 4. Import **date-fns** to **WorkoutDetails.js**.
-5. 
+ 
+## Users Backend:
+
+### Lesson-users 2 - User Routers, Controllers & Model.
+1. Create an **user.js** file inside **routes** folder. I gonna do this importing **express** and then invoking **express.Router()** to make the users routes.
+2. There's going to be two routes one for **/login** and another one forn **/signup** and both of then are gonna be **POST** request.
+3. After routes done. I cretaed a **userController.js** file inside the **controllers** folder, and the functions inside in are goona have the logic for login, and signup.
+4. Import the **userController.js** to the **/routes > user.js**.
+5. Create a Schena for users, so I'm going to create a file named **userSchema.js** inside the **model** folder, then that file is going to be imported to the **userController.js** file to be used from there.
+6. Edit the **server.js** file to add the **user.js** file and add it to the routes.

@@ -126,3 +126,13 @@
 4. Import the **userController.js** to the **/routes > user.js**.
 5. Create a Schena for users, so I'm going to create a file named **userSchema.js** inside the **model** folder, then that file is going to be imported to the **userController.js** file to be used from there.
 6. Edit the **server.js** file to add the **user.js** file and add it to the routes.
+
+### Lesson-users 3 - Signing Up & Hashing Password.
+1. Create a static method inside the **userModel.js** this static will be called "signup" and his structure is as it follows:
+```js:
+  userSchema.statics.signup = fucntion(){
+
+  }
+```
+2. Install **bcrypt** to use it to hash the password in the signup static function.
+3. Import the **userModel.js** to the **userController.js** file to use the signup static funtion.

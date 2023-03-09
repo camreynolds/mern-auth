@@ -138,3 +138,10 @@
 ### Lesson-users 4 - Email & Password validation.
 1. Install a package called **validator** to validated the email, and password.
 2. Require **validator** package inside the **userSchema.js** file and edit the signup static method to use **validator**.
+
+### Lesson-users 6 - Signing tokens.
+1. Install **jsonwebtoken** package
+2. Require the **jsonwebtoken** pakage to the **userController.js** file
+3. Create the secret word in the enviroment file to hash the **jsonwebtoken**
+4. Edit the **signup** function to implement the **jsonwebtoken**
+5. Create a custom re-usablefunction called **createToken** so this function can be called inside the login function and the signup function.

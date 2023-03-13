@@ -145,3 +145,11 @@
 3. Create the secret word in the enviroment file to hash the **jsonwebtoken**
 4. Edit the **signup** function to implement the **jsonwebtoken**
 5. Create a custom re-usablefunction called **createToken** so this function can be called inside the login function and the signup function.
+
+### Lesson-users 7 - Logging users in.
+1. Create a static method inside the **userModel.js** this static will be called "login" and his structure is as it follows:
+```js:
+  userSchema.statics.login = fucntion(){}
+```
+this function is gonna have almost the same structure fo **userSchema.statics.signup** function, just that in this time I gonna use the **bcryp.compare** method to evaluate if the use is typing a valid email.
+2. Import the **userModel.js** to the **userController.js** file to use the login static funtion.

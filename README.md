@@ -153,3 +153,11 @@
 ```
 this function is gonna have almost the same structure fo **userSchema.statics.signup** function, just that in this time I gonna use the **bcryp.compare** method to evaluate if the use is typing a valid email.
 2. Import the **userModel.js** to the **userController.js** file to use the login static funtion.
+
+## Users Frontend:
+
+### Lesson-users 8 - React Auth Context.
+1. Add a new file to **context** folder and named it **AuthContext.js**
+3. Import **AuthContextProvider** to the **index.js** and wraps it. So every component in the app has access to this context.
+4. Create a custom **hooks** folder inside **src**.
+5. Add **useAuthContext.js** file to **hooks** folder. This will be use to define where I wanna use the auth context.

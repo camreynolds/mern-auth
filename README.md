@@ -158,6 +158,12 @@ this function is gonna have almost the same structure fo **userSchema.statics.si
 
 ### Lesson-users 8 - React Auth Context.
 1. Add a new file to **context** folder and named it **AuthContext.js**
-3. Import **AuthContextProvider** to the **index.js** and wraps it. So every component in the app has access to this context.
-4. Create a custom **hooks** folder inside **src**.
-5. Add **useAuthContext.js** file to **hooks** folder. This will be use to define where I wanna use the auth context.
+2. Import **AuthContextProvider** to the **index.js** and wraps it. So every component in the app has access to this context.
+3. Create a custom **hooks** folder inside **src**.
+4. Add **useAuthContext.js** file to **hooks** folder. This will be use to define where I wanna use the auth context.
+
+### Lesson-users 9 - Sign up & Login Forms.
+1. Inside the **pages** folder create a two files, one called **Signup.js** and another one called **Login.js**, both files are gonna be forms where the user will use to access to the app.
+2. Edit the **App.js** file to register the routes for both files, **Signup.js** and **Login.js**
+3. Edit the **Navbar.js** component to add the signup and login link.
+4. Edit the **index.css** to improve the app view.

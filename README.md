@@ -168,5 +168,10 @@ this function is gonna have almost the same structure fo **userSchema.statics.si
 3. Edit the **Navbar.js** component to add the signup and login link.
 4. Edit the **index.css** to improve the app view.
 
-### Lesson-users 10 - useSignup Hook
+### Lesson-users 10 - Making an useSignup Hook
 1. Create a hook called **useSignup.js** this hook will have all the logic tha is gonna be import to the **pages > Signup.js** file an it will update the state of the **AuthContext.js**.
+
+### Lesson-users 11 - Making an useLogout Hook
+1. Create a hook called **useLogout.js** this hook doesn't need to communicate with the backend it only has to update the react app deleting the localStorage item and using the **useAuthContext.js** to dispatch the LOGOUT action.type.
+2. Edit the **Navbar.js** component and create a LOGOUT button, and import the **useLogout.js** hook to use it with the onClick event.
+3. Edit the **index.css** file.

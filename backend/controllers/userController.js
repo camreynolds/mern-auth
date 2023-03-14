@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken")
 
 //* create token custom function
 const createToken = (_id) =>{
-  return jwt.sign({_id}, process.env.SECRET, {expiresIn: "10m"})
+  return jwt.sign({_id}, process.env.SECRET, {expiresIn: "30m"})
 }
 
 //* login user

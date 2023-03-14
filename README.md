@@ -167,3 +167,6 @@ this function is gonna have almost the same structure fo **userSchema.statics.si
 2. Edit the **App.js** file to register the routes for both files, **Signup.js** and **Login.js**
 3. Edit the **Navbar.js** component to add the signup and login link.
 4. Edit the **index.css** to improve the app view.
+
+### Lesson-users 10 - useSignup Hook
+1. Create a hook called **useSignup.js** this hook will have all the logic tha is gonna be import to the **pages > Signup.js** file an it will update the state of the **AuthContext.js**.

@@ -193,3 +193,9 @@ this function is gonna have almost the same structure fo **userSchema.statics.si
 2. Edit the **pages > Home.js** and import the **hook > useAuthContext.js** and edit the fetch function.
 3. Edit the **components > WorkoutForm.js** and import the **hook > useAuthContext.js** and edit the fetch function.
 4. Edit the **components > WorkoutDetails.js** and import the **hook > useAuthContext.js** and edit the fetch function.
+
+### Lesson-users 16 - Protecting React Routes
+1. Edit the **App.js** file to conditionally show some components based in the user status.
+2. Import the **Navigate** component from react-router-dom.
+3. Import the **hooks > useAuthContext.js** to has access to the user.
+4. Edit & update the **index.css** file.

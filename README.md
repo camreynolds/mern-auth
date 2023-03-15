@@ -178,3 +178,8 @@ this function is gonna have almost the same structure fo **userSchema.statics.si
 
 ### Lesson-users 12 - Making an useLogin Hook
 1. Create a hook called **useLogin.js** this hook will have all the logic tha is gonna be import to the **pages > Login.js** file an it will update the state of the **AuthContext.js**.
+
+### Lesson-users 13 - Setting initial AuthState
+1. Import the **useAuthContext.js** to the **Navbar.js** component and then evaluate if there is a valid user in the context swap between signup/login div and logout div.
+2. Edit the **AuthContex.js** to check if there is a valid user when the app first starts. Use the **useEffect** hook inside the **AuthContextProvider** function to do this.
+3. 

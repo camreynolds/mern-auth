@@ -199,3 +199,10 @@ this function is gonna have almost the same structure fo **userSchema.statics.si
 2. Import the **Navigate** component from react-router-dom.
 3. Import the **hooks > useAuthContext.js** to has access to the user.
 4. Edit & update the **index.css** file.
+
+### Lesson-users 17 - Assinging workouts to users.
+1. For doing this I have to assign the user._id to each workout created.
+2. Edit the **backend > models > workoutModel.js** and add a new property "user_id" with this I associated every particuular workouts with a particular user.
+3. Edit the **backend > controllers > workoutControllerjs** add to the Workout.create the user._id for doing this I can require it from the **req.user._id** because I attach the id in the **requireAuth.js** file.
+4. Edit the **workoutControllerjs** file to gain access to the user._id.and edit the **createWorkout** and the **getWorkouts** functions to add the user._id.
+5. Edit the **frontend > hooks > useLogout.js** file to clear the WorkoutContext to doing that I need to import the **useWorkoutContext.js** file to **useLogout.js** 

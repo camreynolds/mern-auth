@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
+import useWorkoutsContext from "../hooks/useWorkoutsContext"
 
 //* hook
 import useAuthContext from "../hooks/useAuthContext"

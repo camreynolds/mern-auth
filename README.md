@@ -182,4 +182,8 @@ this function is gonna have almost the same structure fo **userSchema.statics.si
 ### Lesson-users 13 - Setting initial AuthState
 1. Import the **useAuthContext.js** to the **Navbar.js** component and then evaluate if there is a valid user in the context swap between signup/login div and logout div.
 2. Edit the **AuthContex.js** to check if there is a valid user when the app first starts. Use the **useEffect** hook inside the **AuthContextProvider** function to do this.
-3. 
+
+### Lesson-users 14
+1. Create a middleware function that fires for every single routes before the controllers functions and that middleware is gonna check that the user is authenticated, and to do that needs to check if the request came loaded with the token of the user, and check if the token is a valid token and hasn't changed. 
+2. Go to backend folder and create a folder inside it named "middleware" and inside the middleware folder create a file named **requireAuth.js** 
+3. Import the **requireAuth.js** file to the **routes > workout.js** to used it as middlewaare
